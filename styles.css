@@ -68,12 +68,12 @@
 
         /* Menu toggle */
         .mobile-menu-btn {
-            font-size: 28px;
+            font-size: 1.8rem;
             background: none;
             border: none;
             color: white;
             cursor: pointer;
-            display: none;
+            display: block;
           }
 
           .nav-menu ul {
@@ -85,6 +85,7 @@
           .nav-menu a {
             text-decoration: none;
             color: rgb(14, 4, 4);
+            padding: 10px 0;
           }
           
           @media (max-width: 768px) {
@@ -99,7 +100,8 @@
               position: absolute;
               top: 60px;
               right: 0;
-              width: 200px;
+              left: 0;
+              z-index: 1000;
             }
             .nav-menu.show {
               display: flex;
@@ -210,7 +212,7 @@
         /* display: flex;
         align-items: center;
         gap: 40px; */
-        background-image: url('/images/i14PrMx.jpg');
+        background-image: url('i14PrMx.jpg');
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -870,7 +872,7 @@
             flex-direction: column;
         }
 
-        .hero-text, .hero-image {
+        .hero-text {
             text-align: center;
         }
         }
