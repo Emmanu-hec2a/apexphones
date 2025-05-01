@@ -55,6 +55,7 @@
         .logo {
         display: flex;
         align-items: center;
+        margin-right: 10px; /* Space between logo and name */
         font-size: 24px;
         font-weight: 700;
         color: var(--primary);
@@ -66,12 +67,43 @@
         font-size: 28px;
         }
 
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+        }
+        
         .mobile-menu-btn {
             display: none;
+            font-size: 24px;
             cursor: pointer;
-            color: white;
-            font-size: 1.5rem;
         }
+        
+        /* Mobile view
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #fff;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                padding: 1rem;
+            }
+
+            .nav-links.active {
+                display: flex;
+              }
+        
+            /* .nav-links.active {
+                display: flex;
+            } */
+        
+            /* .mobile-menu-btn {
+                display: block;
+            }
+        } */ 
+        
 
         /* Menu toggle
         .mobile-menu-btn {
@@ -352,7 +384,8 @@
         font-size: 0.9rem;
         margin-bottom: 15px;
         display: -webkit-box;
-        -webkit-line-clamp: 2;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
         }
@@ -876,7 +909,7 @@
         font-size: 0.9rem;
         }
 
-        /* Responsive */
+        /* Responsive
         @media (max-width: 992px) {
         .hero-content {
             flex-direction: column;
@@ -885,9 +918,9 @@
         .hero-text {
             text-align: center;
         }
-        }
+        } */
 
-        @media screen and (max-width: 768px) {
+        @media (max-width: 768px) {
         .nav-links {
             display: none;
             position: absolute;
@@ -904,9 +937,14 @@
         }
 
         .nav-links.active {
-            /* display: none; */
+            display: flex;
             transform: translateY(0%);
         }
+
+        .nav-menu ul {
+            flex-direction: column;
+            gap: 10px;
+          }
 
         .nav-btn {
             margin-left: auto;
