@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ApexPhone - Premium iPhone Store</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="container header-container">
+                <a href="#" class="logo">
+                    <i class="fas fa-mobile-alt"></i>
+                    ApexPhone
+                </a>
+                <nav class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#orders">Orders</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+
+                    <div class="mobile-menu-btn">☰</div>
+                </nav>
+                
+                <div class="nav-btn">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search for iPhones...">
+                    </div>
+                    
+                    <div class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <div id="apexphone_cart" class="cart-count">2</div>
+                    </div>
+                    
+                    <div class="auth-links">
+                        <a href="login.html">Login</a>
+                        <a href="register.html">Register</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <!-- <span class="hero-img">
+                <img src="/images/i16PrMx.jpeg" alt="iPhone Hero Image">
+            </span> -->
+            <div class="container hero-content">
+                <!-- <img src="/images/i16PrMx.jpeg" alt="iPhone Hero Image"> -->
+                <div class="hero-text">
+                    <h1>Experience Premium iPhones at ApexPhone</h1>
+                    <p>Discover the latest iPhone models with exceptional deals and guaranteed UK delivery. Your trusted iPhone specialist since 2018.</p>
+                    <a href="#" class="cta-btn">Shop Now</a>
+                </div>
+                <!-- <div class="hero-image">
+                    <img src="/images/i16PrMx.jpeg" alt="iPhone Display">
+                </div> -->
+            </div>
+        </section>
+        
+        <!-- Featured Products -->
+        <section id="products" class="featured-products">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured iPhones</h2>
+                    <p>Browse our selection of the latest and most popular iPhone models</p>
+                </div>
+                
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="/images/15Pr.jpeg" alt="iPhone 15 Pro Max">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">iPhone 15 Pro Max</h3>
+                            <p class="product-desc">Featuring A17 Pro chip, Dynamic Island, and a titanium design with a stunning Super Retina XDR display.</p>
+                            <div class="product-footer">
+                                <span class="product-price">£999</span>
+                                <span class="stock-status in-stock">In Stock</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="/images/15PrMax.jpg" alt="iPhone 15 Pro">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">iPhone 15 Pro</h3>
+                            <p class="product-desc">Powered by A16 Bionic chip with an impressive camera system and all-day battery life.</p>
+                            <div class="product-footer">
+                                <span class="product-price">£799</span>
+                                <span class="stock-status in-stock">In Stock</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="/images/i15PrMx.jpg" alt="iPhone 14 Pro Max">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">iPhone 14 Pro Max</h3>
+                            <p class="product-desc">Large 6.7-inch display with ProMotion technology, A16 Bionic, and pro-level camera system.</p>
+                            <div class="product-footer">
+                                <span class="product-price">£899</span>
+                                <span class="stock-status out-stock">Out of Stock</span>
+                            </div>
+                            <button class="add-to-cart" disabled>Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="/images/i16.jpeg" alt="iPhone 16">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">iPhone 16</h3>
+                            <p class="product-desc">Compact powerhouse with A15 Bionic chip, Touch ID, and exceptional value for money.</p>
+                            <div class="product-footer">
+                                <span class="product-price">£429</span>
+                                <span class="stock-status in-stock">In Stock</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Cart Section -->
+        <section id="orders" class="cart-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Your Shopping Cart</h2>
+                    <p>Review the items you've selected before proceeding to checkout</p>
+                </div>
+                
+                <div class="cart-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Cart Item 1 -->
+                            <tr>
+                                <td>
+                                    <div class="cart-item">
+                                        <img src="/images/i14PrMx.jpg" alt="iPhone 15 Pro Max">
+                                        <div class="item-info">
+                                            <h4>iPhone 15 Pro</h4>
+                                            <p>Space Black, 256GB</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>£1,099</td>
+                                <td>
+                                    <div class="quantity-selector">
+                                        <button class="quantity-btn">-</button>
+                                        <span class="quantity">1</span>
+                                        <button class="quantity-btn">+</button>
+                                    </div>
+                                </td>
+                                <td>£1,099</td>
+                                <td>
+                                    <button class="remove-btn">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            
+                            <!-- Cart Item 2 -->
+                            <tr>
+                                <td>
+                                    <div class="cart-item">
+                                        <img src="/images/i15Pr.jpeg" alt="iPhone 15 Pro">
+                                        <div class="item-info">
+                                            <h4>iPhone 15 Pro</h4>
+                                            <p>Blue, 128GB</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>£799</td>
+                                <td>
+                                    <div class="quantity-selector">
+                                        <button class="quantity-btn">-</button>
+                                        <span class="quantity">2</span>
+                                        <button class="quantity-btn">+</button>
+                                    </div>
+                                </td>
+                                <td>£1,598</td>
+                                <td>
+                                    <button class="remove-btn">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="cart-total">
+                    <div class="cart-summary">
+                        <h3>Order Summary</h3>
+                        <div>
+                            <p><strong>Subtotal:</strong> £2,697</p>
+                            <p><strong>Shipping:</strong> £0 (Free Delivery)</p>
+                            <p><strong>Total:</strong> <span style="color: var(--primary); font-size: 1.2rem; font-weight: 700;">£2,697</span></p>
+                        </div>
+                    </div>
+                    <a href="#" class="checkout-btn">Proceed to Checkout - PayPal</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Order Tracking -->
+        <section class="tracking-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Track Your Order</h2>
+                    <p>Check the status and details of your iPhone order</p>
+                </div>
+                
+                <div class="tracking-card">
+                    <div class="order-header">
+                        <div>
+                            <h3>Order #APX78542</h3>
+                            <p>Placed on May 1, 2025</p>
+                        </div>
+                        <div class="order-status status-success">
+                            Order Confirmed
+                        </div>
+                    </div>
+                    
+                    <div class="tracking-steps">
+                        <div class="step-list">
+                            <div class="step completed">
+                                <div class="step-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="step-label">Order Placed</div>
+                            </div>
+                            
+                            <div class="step completed">
+                                <div class="step-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="step-label">Payment Confirmed</div>
+                            </div>
+                            
+                            <div class="step active">
+                                <div class="step-icon">
+                                    <i class="fas fa-box"></i>
+                                </div>
+                                <div class="step-label">Processing</div>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-icon">
+                                    <i class="fas fa-truck"></i>
+                                </div>
+                                <div class="step-label">Shipping</div>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <div class="step-label">Delivered</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p>Your order is currently being processed and will be shipped within 24 hours. You will receive a shipping confirmation email with tracking information once your order has been dispatched.</p>
+                    
+                    <div class="delivery-info">
+                        <h3 class="delivery-header">Delivery Information</h3>
+                        <div class="delivery-details">
+                            <div class="delivery-item">
+                                <h4>Delivery Method</h4>
+                                <p>DPD Next Day Delivery</p>
+                            </div>
+                            
+                            <div class="delivery-item">
+                                <h4>Estimated Delivery</h4>
+                                <p>May 3, 2025</p>
+                            </div>
+                            
+                            <div class="delivery-item">
+                                <h4>Delivery Address</h4>
+                                <p>123 Oxford Street, London, W1D 1AB</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Authentication Section -->
+        <section class="auth-section">
+            <div class="container auth-container">
+                <!-- Login Form
+                <div class="auth-card">
+                    <div class="auth-header">
+                        <h2>Login</h2>
+                        <p>Welcome back! Please login to your account</p>
+                    </div>
+                    
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-input" placeholder="your@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-input" placeholder="••••••••">
+                        </div>
+                        
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        
+                        <button type="submit" class="auth-btn">Login</button>
+                        
+                        <div class="auth-footer">
+                            <p>Don't have an account? <a href="#">Register</a></p>
+                        </div>
+                    </form>
+                </div> -->
+                
+                <!-- Register Form
+                <div class="auth-card">
+                    <div class="auth-header">
+                        <h2>Register</h2>
+                        <p>Create a new account to shop with us</p>
+                    </div>
+                    
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label">Username</label>
+                            <input type="text" class="form-input" placeholder="johndoe">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-input" placeholder="your@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Location</label>
+                            <input type="text" class="form-input" placeholder="United Kingdom">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-input" placeholder="••••••••">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Confirm Password</label>
+                            <input type="password" class="form-input" placeholder="••••••••">
+                        </div>
+                        
+                        <div class="terms-checkbox">
+                            <input type="checkbox" id="terms">
+                            <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                        </div>
+                        
+                        <button type="submit" class="auth-btn">Create Account</button>
+                        
+                        <div class="auth-footer">
+                            <p>Already have an account? <a href="#">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div> -->
+        </section>
+        
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-about">
+                        <div class="footer-logo">
+                            <i class="fas fa-mobile-alt"></i>
+                            ApexPhone
+                        </div>
+                        <p>ApexPhone is the UK's premier destination for the latest iPhone models. We provide authentic Apple products with exceptional customer service and guaranteed UK delivery.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Track Order</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h3>Customer Service</h3>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Shipping Policy</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div id="contact" class="footer-contact">
+                        <h3>Contact Us</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 127 Oxford Street, London, UK</p>
+                        <p><i class="fas fa-phone"></i> +44 20 1234 5678</p>
+                        <p><i class="fas fa-envelope"></i> support@apexphone.co.uk</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 9AM - 6PM</p>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2025 ApexPhone. All rights reserved. | London, UK.</p>
+                </div>
+            </div>
+        </footer>
+        <a href="#" class="back-to-top" id="back-to-top">↑</a>
+        <script scr="script.js"></script>
+    </body>
+</html>
